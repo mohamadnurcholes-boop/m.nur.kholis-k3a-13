@@ -1,0 +1,8 @@
+{
+  "name": "khzzz store",
+  "description": "E-Commerce Luxury & Trendy Watches Marketplace with real database, shopping cart, customer checkout, and comprehensive admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

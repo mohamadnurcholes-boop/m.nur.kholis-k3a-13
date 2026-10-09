@@ -1,0 +1,211 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Watch product record in the catalog",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The watch model name"
+        },
+        "brand": {
+          "type": "string",
+          "description": "The watch manufacturer brand"
+        },
+        "category": {
+          "type": "string",
+          "description": "Watch category"
+        },
+        "price": {
+          "type": "number",
+          "description": "Selling price in IDR"
+        },
+        "originalPrice": {
+          "type": "number",
+          "description": "Original retail price before discount"
+        },
+        "stock": {
+          "type": "number",
+          "description": "Available stock quantity"
+        },
+        "description": {
+          "type": "string",
+          "description": "Product detailed description"
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Product display image URL"
+        },
+        "badge": {
+          "type": "string",
+          "description": "Badge tag like Best Seller, New, Limited"
+        },
+        "rating": {
+          "type": "number",
+          "description": "Average review rating"
+        },
+        "reviewsCount": {
+          "type": "number",
+          "description": "Total number of reviews"
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Whether to highlight on homepage"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of creation"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["name", "category", "price", "stock", "imageUrl"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer purchase transaction",
+      "type": "object",
+      "properties": {
+        "orderNumber": {
+          "type": "string",
+          "description": "Unique readable invoice number"
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Full name of customer"
+        },
+        "customerEmail": {
+          "type": "string",
+          "description": "Email address of customer"
+        },
+        "customerPhone": {
+          "type": "string",
+          "description": "Phone or WhatsApp number"
+        },
+        "shippingAddress": {
+          "type": "string",
+          "description": "Full delivery address"
+        },
+        "city": {
+          "type": "string",
+          "description": "City of destination"
+        },
+        "postalCode": {
+          "type": "string",
+          "description": "Postal code"
+        },
+        "courier": {
+          "type": "string",
+          "description": "Selected courier service"
+        },
+        "paymentMethod": {
+          "type": "string",
+          "description": "Payment channel method"
+        },
+        "subtotal": {
+          "type": "number",
+          "description": "Subtotal of products"
+        },
+        "shippingFee": {
+          "type": "number",
+          "description": "Shipping cost"
+        },
+        "totalAmount": {
+          "type": "number",
+          "description": "Total payable amount"
+        },
+        "status": {
+          "type": "string",
+          "description": "Order lifecycle state",
+          "enum": ["pending_payment", "awaiting_approval", "processing", "shipped", "delivered", "rejected", "cancelled"]
+        },
+        "paymentProofUrl": {
+          "type": "string",
+          "description": "Payment proof receipt image"
+        },
+        "paymentProofSubmittedAt": {
+          "type": "string",
+          "description": "Timestamp when receipt was uploaded"
+        },
+        "approvalNote": {
+          "type": "string",
+          "description": "Admin notes regarding approval or rejection"
+        },
+        "trackingNumber": {
+          "type": "string",
+          "description": "Shipping expedition resi tracking code"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["orderNumber", "customerName", "customerEmail", "customerPhone", "shippingAddress", "totalAmount", "status"]
+    },
+    "Customer": {
+      "title": "Customer",
+      "description": "Customer profile and aggregated statistics",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Customer name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Customer email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Customer phone"
+        },
+        "address": {
+          "type": "string",
+          "description": "Default shipping address"
+        },
+        "city": {
+          "type": "string",
+          "description": "Default city"
+        },
+        "totalOrders": {
+          "type": "number",
+          "description": "Total count of orders placed"
+        },
+        "totalSpent": {
+          "type": "number",
+          "description": "Total cumulative spending"
+        },
+        "lastOrderDate": {
+          "type": "string",
+          "description": "Timestamp of most recent order"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Account registration or first order timestamp"
+        }
+      },
+      "required": ["name", "email"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Collection of watch products available for sale"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Collection of orders placed by customers"
+    },
+    "/customers/{customerId}": {
+      "schema": "Customer",
+      "description": "Collection of recorded customers"
+    }
+  }
+}

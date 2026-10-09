@@ -1,0 +1,297 @@
+import { Product } from '../types';
+
+export const INITIAL_PRODUCTS: Product[] = [
+  // --- KATEGORI 1: Chronograph & Luxury ---
+  {
+    id: 'khz-watch-01',
+    name: 'KHZZZ Royal Cosmograph Black Onyx',
+    brand: 'KHZZZ Horology Geneva',
+    category: 'Chronograph & Luxury',
+    price: 8850000,
+    originalPrice: 10500000,
+    stock: 7,
+    badge: 'Best Seller',
+    rating: 4.9,
+    reviewsCount: 142,
+    featured: true,
+    description: 'Chronograph presisi tinggi dengan tachymeter bezel keramik hitam anti-gores, dial tiga sub-dial bertekstur sunburst, dan rantai solid Oyster 316L stainless steel.',
+    imageUrl: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Calibre 4130 Automatic Chronograph (28,800 vph)',
+      caseDiameter: '40 mm',
+      waterResistance: '100 Meter / 10 ATM',
+      strapMaterial: 'Solid 316L Stainless Steel Oyster Clasp',
+      glass: 'Scratch-resistant Sapphire Crystal AR Coating',
+      powerReserve: '72 Jam'
+    },
+    createdAt: '2026-01-15T08:00:00.000Z'
+  },
+  {
+    id: 'khz-watch-02',
+    name: 'KHZZZ Heritage Chrono Rose Gold Panda',
+    brand: 'KHZZZ Atelier',
+    category: 'Chronograph & Luxury',
+    price: 9400000,
+    originalPrice: 11200000,
+    stock: 5,
+    badge: 'Limited Edition',
+    rating: 5.0,
+    reviewsCount: 88,
+    featured: true,
+    description: 'Mahakarya vintage modern berbalut rose gold 18K PVD finish dengan dial panda kontras hitam-putih krem dan jarum blued steel klasik.',
+    imageUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Column-Wheel Mechanical Chronograph Hand-wind',
+      caseDiameter: '41 mm',
+      waterResistance: '50 Meter / 5 ATM',
+      strapMaterial: 'Handcrafted Italian Suede Leather Dark Brown',
+      glass: 'Double-domed Sapphire with Anti-reflective treatment',
+      powerReserve: '56 Jam'
+    },
+    createdAt: '2026-01-20T09:30:00.000Z'
+  },
+  {
+    id: 'khz-watch-03',
+    name: 'KHZZZ Skeleton Tourbillon Titanium',
+    brand: 'KHZZZ Haute Horlogerie',
+    category: 'Chronograph & Luxury',
+    price: 14750000,
+    originalPrice: 17500000,
+    stock: 3,
+    badge: 'Featured',
+    rating: 5.0,
+    reviewsCount: 39,
+    featured: true,
+    description: 'Desain openworked transparan memperlihatkan detak escapement rumit. Casing titanium kelas kedirgantaraan yang sangat ringan namun kokoh tak tertandingi.',
+    imageUrl: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'In-house Skeletonized Automatic Dual-Barrel',
+      caseDiameter: '42 mm',
+      waterResistance: '50 Meter / 5 ATM',
+      strapMaterial: 'Fluororubber Sport Strap with Titanium Deployment Buckle',
+      glass: 'Beveled Sapphire Front and Exhibition Caseback',
+      powerReserve: '80 Jam'
+    },
+    createdAt: '2026-02-01T11:00:00.000Z'
+  },
+  {
+    id: 'khz-watch-04',
+    name: 'KHZZZ Aviator Navitimer Chrono',
+    brand: 'KHZZZ Flight Division',
+    category: 'Chronograph & Luxury',
+    price: 7650000,
+    originalPrice: 8900000,
+    stock: 8,
+    badge: 'New',
+    rating: 4.8,
+    reviewsCount: 64,
+    featured: false,
+    description: 'Jam tangan penerbang legendaris dilengkapi bezel kalkulator geser melingkar (circular slide rule) untuk navigasi waktu tempuh dan konsumsi bahan bakar.',
+    imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Swiss High-Beat Automatic Chronograph B01',
+      caseDiameter: '43 mm',
+      waterResistance: '30 Meter / 3 ATM',
+      strapMaterial: 'Genuine Alligator Embossed Leather Black',
+      glass: 'Cambered Sapphire Glareproofed both sides',
+      powerReserve: '70 Jam'
+    },
+    createdAt: '2026-02-05T14:15:00.000Z'
+  },
+
+  // --- KATEGORI 2: Sport & Diver ---
+  {
+    id: 'khz-watch-05',
+    name: 'KHZZZ DeepSea Diver 300M Emerald',
+    brand: 'KHZZZ Maritime',
+    category: 'Sport & Diver',
+    price: 4950000,
+    originalPrice: 5800000,
+    stock: 12,
+    badge: 'Best Seller',
+    rating: 4.9,
+    reviewsCount: 198,
+    featured: true,
+    description: 'Diver watch profesional dengan dial hijau zamrud sunburst, bezel keramik 120 klik unidirectional, dan indeks Super-LumiNova BGW9 terang di kegelapan laut dalam.',
+    imageUrl: 'https://images.unsplash.com/photo-1547996160-71dfabb1d0a5?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'NH35A Automatic Movement with Hacking Seconds',
+      caseDiameter: '41.5 mm',
+      waterResistance: '300 Meter / 30 ATM (Helium Escape Valve)',
+      strapMaterial: 'Solid Brushed Steel 316L with Diver Extension',
+      glass: 'Domed Sapphire Crystal with Internal Cyclops Date',
+      powerReserve: '41 Jam'
+    },
+    createdAt: '2026-01-18T10:00:00.000Z'
+  },
+  {
+    id: 'khz-watch-06',
+    name: 'KHZZZ HydroSub Nautical Deep Blue',
+    brand: 'KHZZZ Maritime',
+    category: 'Sport & Diver',
+    price: 4600000,
+    originalPrice: 5300000,
+    stock: 9,
+    badge: 'Sale',
+    rating: 4.8,
+    reviewsCount: 115,
+    featured: false,
+    description: 'Pesona samudra biru pekat dengan perpaduan brushed steel dan aksen oranye sporty pada jarum menit. Cocok untuk petualangan laut maupun aktivitas harian.',
+    imageUrl: 'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Miyota 9015 Premium Slim Automatic',
+      caseDiameter: '42 mm',
+      waterResistance: '200 Meter / 20 ATM',
+      strapMaterial: 'Waterproof FKM Vulcanized Rubber Strap Blue',
+      glass: 'Flat Sapphire with 5x Anti-Reflective Coating',
+      powerReserve: '42 Jam'
+    },
+    createdAt: '2026-01-25T13:40:00.000Z'
+  },
+  {
+    id: 'khz-watch-07',
+    name: 'KHZZZ Aqua Terra Stealth Carbon 200M',
+    brand: 'KHZZZ Tactical Gear',
+    category: 'Sport & Diver',
+    price: 5800000,
+    originalPrice: 6900000,
+    stock: 6,
+    badge: 'Limited Edition',
+    rating: 4.9,
+    reviewsCount: 73,
+    featured: true,
+    description: 'Konstruksi bodi serat karbon tempa (forged carbon) warna hitam matte ultra-tahan benturan. Dial tekstur sarang lebah dengan aksen merah balap.',
+    imageUrl: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Shock-resistant Heavy Duty Automatic',
+      caseDiameter: '43.5 mm',
+      waterResistance: '200 Meter / 20 ATM',
+      strapMaterial: 'Ballistic Cordura Nylon with Leather Underlay',
+      glass: 'Military Grade Sapphire Crystal',
+      powerReserve: '48 Jam'
+    },
+    createdAt: '2026-02-02T16:20:00.000Z'
+  },
+  {
+    id: 'khz-watch-08',
+    name: 'KHZZZ Mountain Explorer GMT Field',
+    brand: 'KHZZZ Expedition',
+    category: 'Sport & Diver',
+    price: 3950000,
+    originalPrice: 4700000,
+    stock: 11,
+    badge: 'New',
+    rating: 4.7,
+    reviewsCount: 52,
+    featured: false,
+    description: 'Field watch tangguh dengan jarum kompas GMT 24-jam independen untuk melacak zona waktu kedua saat bepergian ke luar negeri atau mendaki.',
+    imageUrl: 'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Seiko NH34 Automatic GMT Function',
+      caseDiameter: '39.5 mm',
+      waterResistance: '100 Meter / 10 ATM',
+      strapMaterial: 'Quick-release Olive Green Canvas NATO Strap',
+      glass: 'Box Sapphire Crystal with Anti-Scratch Coating',
+      powerReserve: '41 Jam'
+    },
+    createdAt: '2026-02-10T12:00:00.000Z'
+  },
+
+  // --- KATEGORI 3: Classic & Minimalist ---
+  {
+    id: 'khz-watch-09',
+    name: 'KHZZZ Grand Master Moonphase Guilloche',
+    brand: 'KHZZZ Atelier',
+    category: 'Classic & Minimalist',
+    price: 6750000,
+    originalPrice: 7900000,
+    stock: 4,
+    badge: 'Best Seller',
+    rating: 5.0,
+    reviewsCount: 164,
+    featured: true,
+    description: 'Kemewahan aristokrat dengan ukiran dial guilloche clous de paris, indikator fase bulan (moonphase) biru keemasan, dan angka Romawi ramping.',
+    imageUrl: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Swiss Precision Automatic with Moonphase Complication',
+      caseDiameter: '40 mm',
+      waterResistance: '50 Meter / 5 ATM',
+      strapMaterial: 'Premium Genuine Crocodile Grain Leather Midnight Navy',
+      glass: 'Ultra-clear Anti-glare Sapphire Crystal',
+      powerReserve: '50 Jam'
+    },
+    createdAt: '2026-01-10T09:00:00.000Z'
+  },
+  {
+    id: 'khz-watch-10',
+    name: 'KHZZZ Ultra Slim Bauhaus Champagne',
+    brand: 'KHZZZ Minimal',
+    category: 'Classic & Minimalist',
+    price: 3250000,
+    originalPrice: 3900000,
+    stock: 15,
+    badge: 'Sale',
+    rating: 4.8,
+    reviewsCount: 210,
+    featured: false,
+    description: 'Ketebalan case ultra-ramping hanya 6.8 mm. Desain filosofi Bauhaus Jerman yang minimalis, dial bersih warna champagne, dan strap kulit anak sapi Italia.',
+    imageUrl: 'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Ultra-thin Quartz Precision High Torque (battery life 4 years)',
+      caseDiameter: '38 mm',
+      waterResistance: '30 Meter / 3 ATM',
+      strapMaterial: 'Top Grain Italian Calfskin Tan Honey',
+      glass: 'Curved Hardened Sapphire Coating',
+      powerReserve: '4 Tahun Baterai'
+    },
+    createdAt: '2026-01-22T15:10:00.000Z'
+  },
+  {
+    id: 'khz-watch-11',
+    name: 'KHZZZ Heritage Petite Gold Dress',
+    brand: 'KHZZZ Horology Geneva',
+    category: 'Classic & Minimalist',
+    price: 4850000,
+    originalPrice: 5600000,
+    stock: 8,
+    badge: 'New',
+    rating: 4.9,
+    reviewsCount: 89,
+    featured: false,
+    description: 'Kemewahan abadi warna emas kuning 18K dengan subdial detik kecil di posisi jam 6. Proporsi elegan yang serasi untuk setelan jas formal maupun gaun pesta.',
+    imageUrl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Manual Mechanical Hand-Wind 21,600 vph',
+      caseDiameter: '37 mm',
+      waterResistance: '30 Meter / 3 ATM',
+      strapMaterial: 'Polished 18K Yellow Gold PVD Mesh Milanese Bracelet',
+      glass: 'Scratch-proof Sapphire Crystal',
+      powerReserve: '45 Jam'
+    },
+    createdAt: '2026-02-04T10:45:00.000Z'
+  },
+  {
+    id: 'khz-watch-12',
+    name: 'KHZZZ Royal Sovereign Automatic Fluted',
+    brand: 'KHZZZ Atelier',
+    category: 'Classic & Minimalist',
+    price: 5400000,
+    originalPrice: 6300000,
+    stock: 10,
+    badge: 'Best Seller',
+    rating: 4.9,
+    reviewsCount: 178,
+    featured: true,
+    description: 'Bezel fluted berkilau memantulkan cahaya dengan anggun, jendela tanggal dengan pembesar Cyclops 2.5x, dan gelang Jubilee 5-link yang super nyaman.',
+    imageUrl: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?auto=format&fit=crop&w=900&q=80',
+    specs: {
+      movement: 'Automatic Movement with Instant Date Correction',
+      caseDiameter: '39 mm',
+      waterResistance: '100 Meter / 10 ATM',
+      strapMaterial: 'Jubilee 5-Piece Links 316L Stainless Steel',
+      glass: 'Sapphire Crystal with Cyclops Lens Magnification',
+      powerReserve: '42 Jam'
+    },
+    createdAt: '2026-02-08T17:00:00.000Z'
+  }
+];
